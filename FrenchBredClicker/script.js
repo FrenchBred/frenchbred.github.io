@@ -32,7 +32,7 @@ function pop(e) {
 
 function createParticle(x, y, type) {
   var particle = document.createElement("particle");
-  document.body.appendChild(particle);
+  bred.appendChild(particle);
 
   var size = Math.floor(Math.random() * 20 + 50);
 
@@ -68,6 +68,5 @@ function createParticle(x, y, type) {
     e.target.effect.target.remove();
   };
 }
-
 
 // szpla tu spi
