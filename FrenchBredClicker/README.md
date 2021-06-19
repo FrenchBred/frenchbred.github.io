@@ -1,4 +1,4 @@
-# FRENCHBRED CLICKER
+# [FrenchBred Clicker](https://frenchbred.github.io/FrenchBredClicker/)
 
 ## O grze
 
