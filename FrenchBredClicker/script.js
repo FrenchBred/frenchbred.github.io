@@ -64,13 +64,10 @@ function createParticle(x, y, type) {
     }
   );
 
-  animation.onfinish = () => {
-    particle.removeParticle;
+  animation.onfinish = (e) => {
+    e.target.effect.target.remove();
   };
 }
 
-function removeParticle(e) {
-  e.srcElement.effect.target.remove();
-}
 
 // szpla tu spi
