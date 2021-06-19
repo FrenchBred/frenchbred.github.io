@@ -32,7 +32,8 @@ function pop(e) {
 
 function createParticle(x, y, type) {
   var particle = document.createElement("particle");
-  bred.appendChild(particle);
+  var particleContainer = document.querySelector('#particleContainer');
+  particleContainer.appendChild(particle);
 
   var size = Math.floor(Math.random() * 20 + 50);
 
