@@ -1,10 +1,10 @@
-## FRENCHBRED CLICKER
+# FRENCHBRED CLICKER
 
-# O grze
+## O grze
 
 Kto grał w cookie clicker ten wie.
 
-# TODO
+## TODO
 
 *
 
