@@ -1,6 +1,7 @@
 * {
   margin: 0; 
   font-family: Arial;
+  user-select: none;
 }
 
 body {
@@ -21,4 +22,16 @@ p {
   background-size: cover;
   height: 512px;
   width: 512px;
+}
+
+#bred.clicked{
+  transform: translate(3px, 3px);
+}
+
+particle{
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  position: fixed;
+  opacity: 0;
 }

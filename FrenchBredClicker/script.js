@@ -1,3 +1,5 @@
+// FRENCH BRED
+
 var points = 0;
 var counter = document.querySelector('#counter');
 var bred = document.querySelector('#bred');
