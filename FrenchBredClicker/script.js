@@ -7,22 +7,12 @@ var bred = document.querySelector('#bred');
 counter.innerText = `French Breds: ${points}`;
 
 function addPoint() {
-  bred.classList.toggle("clicked");
+  bred.classList.toggle('clicked');
   counter.innerText = `French Breds: ${++points}`;
   console.log(`Points: ${points}`);
 
-  setTimeout(
-    () => { 
-      bred.classList.toggle("clicked");
-    },
-    50
-  )
+  setTimeout( () => { bred.classList.toggle('clicked'); }, 50 )
 };
-
-bred.addEventListener('click', (e) => {
-  addPoint();
-  pop(e);
-});
 
 function pop(e) {
   for (let i = 0; i < 3; i++) {
@@ -31,7 +21,7 @@ function pop(e) {
 }
 
 function createParticle(x, y, type) {
-  var particle = document.createElement("particle");
+  var particle = document.createElement('particle');
   var particleContainer = document.querySelector('#particleContainer');
   particleContainer.appendChild(particle);
 
@@ -60,7 +50,7 @@ function createParticle(x, y, type) {
     ],
     {
       duration: 500 + Math.random() * 1000,
-      easing: "cubic-bezier(0, .9, .57, 1)",
+      easing: 'cubic-bezier(0, .9, .57, 1)',
       delay: Math.random() * 200,
     }
   );
@@ -69,5 +59,15 @@ function createParticle(x, y, type) {
     e.target.effect.target.remove();
   };
 }
+
+setInterval(() => {
+  var bredWidth = parseInt(getComputedStyle(bred).width.split('px')[0]);
+  bred.style.height = `${bredWidth}px`;
+}, 1000/60);
+
+bred.addEventListener('click', (e) => {
+  addPoint();
+  pop(e);
+});
 
 // szpla tu spi

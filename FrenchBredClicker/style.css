@@ -5,27 +5,51 @@
 }
 
 body {
+  display: grid;
+  grid-gap: 0;
+
+  grid-template-columns: 384px 384px auto;
+  grid-template-rows: auto;
+
   height: 100vh;
   width: 100vw;
 }
 
 #mainWindow {
+  display: grid;
+  grid-template-rows: 128px auto;
+  grid-template-columns: 100%;
+  justify-content: center;
+  grid-column: 2;
+  grid-row: 1;
   height: 100%;
 }
 
-p {
+#upgradeWindow {
+  grid-column: 1;
+}
+
+#counter {
+  width: 100%;
+  text-align: center;
   font-size: 48px;
 }
 
 #bred {
   background-image: url('images/bred.png');
   background-size: cover;
-  height: 512px;
-  width: 512px;
+  grid-row: 2;
+  width: 100%;
+  max-width: 384px;
+  transition: transform 100ms ease;
 }
 
 #bred.clicked {
   transform: translate(3px, 3px);
+}
+
+#particleContainer {
+  grid-row: 2;
 }
 
 particle {
