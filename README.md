@@ -2,12 +2,14 @@
 
 Kto grał w cookie clicker ten wie.
 
-TODO:
+## TODO
+
 * Zrobić gre
 * Sportować ją do UNITY
 * Zbudować bliźniaki w stanie surowym
 
 ## Twórcy
-Lisuu
-Szpla
-Bakayoko2115
+
+* Lisuu
+* Szpla
+* Bakayoko2115
