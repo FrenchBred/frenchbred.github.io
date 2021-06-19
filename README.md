@@ -2,13 +2,12 @@
 
 Kto grał w cookie clicker ten wie.
 
-Plany:
-* 
-* Listy wyglądają profesjonalnie
-* Fajny tekst żeby była ładna ilość punktów
+TODO:
+* Zrobić gre
+* Sportować ją do UNITY
+* Zbudować bliźniaki w stanie surowym
 
 ## Twórcy
-
 Lisuu
 Szpla
 Bakayoko2115
