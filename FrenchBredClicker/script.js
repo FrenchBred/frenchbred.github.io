@@ -5,17 +5,22 @@ var bred = document.querySelector('#bred');
 counter.innerText = `French Breds: ${points}`;
 
 function addPoint() {
+  bred.classList.toggle("clicked");
   counter.innerText = `French Breds: ${++points}`;
   console.log(`Points: ${points}`);
+
+  setTimeout(
+    () => { 
+      bred.classList.toggle("clicked");
+    },
+    50
+  )
 };
 
-document.addEventListener('keyup', (event) => {
-  if(event.key === " ") {
-    addPoint();
-  };
+bred.addEventListener('click', (e) => {
+  addPoint();
+  pop(e);
 });
-
-bred.addEventListener('click', addPoint);
 
 function pop(e) {
   for (let i = 0; i < 3; i++) {
@@ -35,7 +40,7 @@ function createParticle(x, y, type) {
   var destinationX = x + (Math.random() - 0.5) * 2 * 75 * recoil;
   var destinationY = y + (Math.random() - 0.5) * 2 * 75 * recoil;
 
-  particle.style.backgroundImage = `url("https://images.emojiterra.com/google/android-11/512px/1f956.png")`;
+  particle.style.backgroundImage = `url("images/bred.png")`;
   particle.style.backgroundSize = `cover`;
   
 
