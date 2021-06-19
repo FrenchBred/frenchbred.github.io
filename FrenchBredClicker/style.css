@@ -24,11 +24,11 @@ p {
   width: 512px;
 }
 
-#bred.clicked{
+#bred.clicked {
   transform: translate(3px, 3px);
 }
 
-particle{
+particle {
   left: 0;
   top: 0;
   pointer-events: none;
