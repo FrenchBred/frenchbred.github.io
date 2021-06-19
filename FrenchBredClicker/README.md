@@ -10,7 +10,7 @@ Kto grał w cookie clicker ten wie.
 - [ ] Achievements
 - [ ] Prevent Autoclickers
 - [ ] Clicking 'machines'
-- [x] Zbudować bliźniaki w stanie surowym
+- [ ] Zbudować bliźniaki w stanie surowym
 
 ## Twórcy
 
