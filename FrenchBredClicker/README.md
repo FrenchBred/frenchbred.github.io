@@ -1,6 +1,6 @@
 # [FrenchBred Clicker](https://frenchbred.github.io/FrenchBredClicker/)
 
-## O grze
+## About
 
 Kto grał w cookie clicker ten wie.
 
@@ -12,8 +12,8 @@ Kto grał w cookie clicker ten wie.
 - [ ] Clicking 'machines'
 - [ ] Zbudować bliźniaki w stanie surowym
 
-## Twórcy
+## Contributors
 
-* Lisuu
-* Szpla
-* Bakayoko2115
+- [x] Lisuu
+- [x] Szpla
+- [ ] Bakayoko2115

@@ -2,8 +2,8 @@
 
 Epic
 
-## Twórcy
+## Contributors
 
-* Lisuu
-* Szpla
-* Bakayoko2115
+- [x] Lisuu
+- [x] Szpla
+- [ ] Bakayoko2115
