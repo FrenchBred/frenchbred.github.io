@@ -11,3 +11,7 @@ Kto grał w cookie clicker ten wie.
 * Zbudować bliźniaki w stanie surowym
 
 ## Twórcy
+
+* Lisuu
+* Szpla
+* Bakayoko2115
