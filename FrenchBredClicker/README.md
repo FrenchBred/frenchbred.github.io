@@ -6,6 +6,11 @@ Kto grał w cookie clicker ten wie.
 
 ## TODO
 
+- [x] Write script for counting points on click
+- [ ] Achievements
+- [ ] Prevent Autoclickers
+- [ ] Clicking 'machines'
+
 * Zrobić gre
 * Sportować ją do UNITY
 * Zbudować bliźniaki w stanie surowym
