@@ -11,10 +11,10 @@ Typical clicker game based on cookie clicker but French.
 - [ ] Save system
 - [ ] Prevent Autoclickers
 - [ ] Achievements
-- [ ] Zbudować bliźniaki w stanie surowym
+- [ ] Zbudować bliźniaki w stanie surowym zamkniętym
 
 ## Contributaters
 
-- Lisuu
-- Spzla
-- Wojjakk
+- [x] Lisuu
+- [x] spzla
+- [ ] Wojjakk

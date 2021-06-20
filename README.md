@@ -6,6 +6,6 @@ Don't expect good games as we make them for fun and learning.
 
 ## Contributaters
 
-- Lisuu
-- Spzla
-- Wojjakk
+- [x] Lisuu
+- [x] spzla
+- [ ] Wojjakk
