@@ -18,7 +18,6 @@ main {
   margin-bottom: 5vh; 
   height: 90vh; 
   border-radius: 25px; 
-  overflow: hidden; 
   box-shadow: 0 0 16px 8px #161616; 
 }
 
