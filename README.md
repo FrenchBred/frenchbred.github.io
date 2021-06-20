@@ -1,9 +1,11 @@
-# [FrenchBred HUB](https://frenchbred.github.io/)
+# [FrenchBred Games](https://frenchbred.github.io/)
 
-Epic
+Little Polish "Studio" making games about France and bread.
+We are not planning to do big projects.
+Don't expect good games as we make them for fun and learning.
 
-## Contributors
+## Contributaters
 
-- [x] Lisuu
-- [x] Szpla
-- [ ] Bakayoko2115
+- Lisuu
+- Spzla
+- Wojjakk
