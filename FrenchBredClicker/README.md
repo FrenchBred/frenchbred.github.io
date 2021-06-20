@@ -2,18 +2,19 @@
 
 ## About
 
-Kto grał w cookie clicker ten wie.
+Typical clicker game based on cookie clicker but French.
 
 ## TODO
 
-- [x] Write script for counting points on click
-- [ ] Achievements
-- [ ] Prevent Autoclickers
+- [x] Clickable bred
 - [ ] Clicking 'machines'
+- [ ] Save system
+- [ ] Prevent Autoclickers
+- [ ] Achievements
 - [ ] Zbudować bliźniaki w stanie surowym
 
-## Contributors
+## Contributaters
 
-- [x] Lisuu
-- [x] Szpla
-- [ ] Bakayoko2115
+- Lisuu
+- Spzla
+- Wojjakk
