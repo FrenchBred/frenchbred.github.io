@@ -2,7 +2,7 @@
 
 ## About
 
-Typical clicker game based on cookie clicker but French.
+Typical clicker game based on good old cookie clicker but about clicking baguettes (french breds)!
 
 ## TODO
 
