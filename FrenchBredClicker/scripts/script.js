@@ -1,12 +1,15 @@
-// FRENCH BRED
+
 const counter = document.querySelector('#counter');
 const bred = document.querySelector('#bred');
 
-let points = 0;
+let player = {
+  points: 0,
+  pointsPerClick: 1
+}
 
 function pop(e) {
-  points++;
-  for (let i = 0; i < 3; i++) {
+  player.points.add(player.pointsPerClick);
+  for (let i = 0; i < 1 * player.pointsPerClick; i++) {
     createParticle(e.clientX, e.clientY, e.target.dataset.type);
   }
 }
@@ -14,7 +17,6 @@ function pop(e) {
 setInterval(() => {
   const bredWidth = Number(getComputedStyle(bred).width.split('px')[0]);
   bred.style.height = `${bredWidth}px`;
-  counter.innerHTML = `French Breds:<br>${points}`;
+  counter.innerHTML = `French Breds:<br>${player.points.get()}`;
 }, 1000/60);
-
 // szpla tu spi
