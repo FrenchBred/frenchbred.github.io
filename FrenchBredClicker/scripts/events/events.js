@@ -11,3 +11,7 @@ bred.addEventListener('mouseup', (e) => {
 bred.addEventListener('mouseleave', (e) => {
   bred.classList.remove('clicked');
 });
+
+bred.addEventListener('touchstart', (e) => {
+  e.preventDefault();
+});
