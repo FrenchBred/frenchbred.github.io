@@ -9,7 +9,7 @@ Typical clicker game based on good old cookie clicker but about clicking baguett
 - [x] Clickable bred
 - [ ] Clicking 'machines'
 - [ ] Save system
-- [ ] Prevent Autoclickers
+- [ ] AntiCheat
 - [ ] Achievements
 - [ ] Zbudować bliźniaki w stanie surowym zamkniętym
 
@@ -17,4 +17,4 @@ Typical clicker game based on good old cookie clicker but about clicking baguett
 
 - [x] Lisuu
 - [x] spzla
-- [ ] Wojjakk
+- [x] Wojjakk
