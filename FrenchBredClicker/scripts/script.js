@@ -17,6 +17,7 @@ function pop(e) {
 setInterval(() => {
   const bredWidth = Number(getComputedStyle(bred).width.split('px')[0]);
   bred.style.height = `${bredWidth}px`;
-  counter.innerHTML = `French Breds:<br>${player.points.get()}`;
+  counter.innerHTML = `French Breds:<br>${player.points}`;
 }, 1000/60);
+
 // szpla tu spi
