@@ -13,11 +13,10 @@ function pop(e) {
     createParticle(e.clientX, e.clientY, e.target.dataset.type);
   }
 }
-
 setInterval(() => {
   const bredWidth = Number(getComputedStyle(bred).width.split('px')[0]);
   bred.style.height = `${bredWidth}px`;
   counter.innerHTML = `French Breds:<br>${player.points}`;
-}, 1000/60);
+}, 1000 / 15);
 
-// szpla tu spi
+
