@@ -8,7 +8,7 @@ let player = {
 }
 
 function pop(e) {
-  player.points++;
+  player.points += player.pointsPerClick;
   for (let i = 0; i < 1 * player.pointsPerClick; i++) {
     createParticle(e.clientX, e.clientY, e.target.dataset.type);
   }
