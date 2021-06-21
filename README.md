@@ -8,4 +8,4 @@ Don't expect good games as we make them for fun and learning.
 
 - [x] Lisuu
 - [x] spzla
-- [ ] Wojjakk
+- [x] Wojjakk
