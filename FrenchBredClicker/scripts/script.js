@@ -1,22 +1,20 @@
-
 const counter = document.querySelector('#counter');
 const bred = document.querySelector('#bred');
 
-let player = {
-  points: 0,
-  pointsPerClick: 1
+const getCookieValue = (name) => (
+  document.cookie.match('(^|;)\\s*' + name + '\\s*=\\s*([^;]+)')?.pop() || ''
+);
+
+if(getCookieValue('points') == '') document.cookie = 'points=0';
+if(getCookieValue('pointsPerClick') == '') document.cookie = 'pointsPerClick=1'; 
+
+window.onload = function() {
+  counter.innerHTML = `French Breds:<br>${getCookieValue('points')}`;
 }
 
-function pop(e) {
-  player.points += player.pointsPerClick;
-  for (let i = 0; i < 1 * player.pointsPerClick; i++) {
-    createParticle(e.clientX, e.clientY, e.target.dataset.type);
-  }
-}
 setInterval(() => {
   const bredWidth = Number(getComputedStyle(bred).width.split('px')[0]);
   bred.style.height = `${bredWidth}px`;
-  counter.innerHTML = `French Breds:<br>${player.points}`;
 }, 1000 / 15);
 
-
+// szpla tu spi
