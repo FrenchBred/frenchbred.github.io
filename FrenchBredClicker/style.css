@@ -72,7 +72,7 @@ body {
   cursor: pointer;
 }
 
-#bred.clicked {
+#bred:active {
   transform: translate(3px, 3px);
 }
 
