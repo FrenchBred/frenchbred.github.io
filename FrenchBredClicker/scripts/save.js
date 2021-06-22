@@ -15,10 +15,13 @@ function save() {
 
 saveButton.addEventListener('click', () => {
   save();
+  alert('Saved!');
 });
 
 delSaveButton.addEventListener('click', () => {
+  if(!confirm('Do you want to reset your save?')) { return alert('Your save was not reset!'); }
   player.points = 0;
   save();
+  alert('Your save was successfully reset!');
 });
 
