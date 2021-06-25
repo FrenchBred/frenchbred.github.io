@@ -7,9 +7,9 @@ Typical clicker game based on good old cookie clicker but about clicking baguett
 ## TODO
 
 - [x] Clickable bred
+- [x] Save system
 - [ ] Clicking 'machines'
-- [ ] Save system
-- [ ] AntiCheat
+- [ ] AntiCheat (encrypting / encoding saves and prevent changing points from console)
 - [ ] Achievements
 - [ ] Zbudować bliźniaki w stanie surowym zamkniętym
 
