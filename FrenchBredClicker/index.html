@@ -5,10 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta charset="UTF-8">
     <title>FrenchBred Clicker</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
   <body>
-    <div id="upgrades">
-      <div class="header">Upgrades</div>
+    <div id="upgradesMenu">
+      <div class="content">
+        <div class="header">Upgrades</div>
+        <div id="upgradeList"></div>
+      </div>
       <div id="closeButton">
         <div class="bar"></div>
         <div class="bar"></div>
@@ -20,7 +24,7 @@
       <div id="particleContainer"></div>
     </div>
     <div id="cos">
-      <button id="delSave">Delete Save</button>
+      <button id="delSave">Reset Save</button>
     </div>
   </body>
   <script defer src="scripts/handlers/click.js"></script>

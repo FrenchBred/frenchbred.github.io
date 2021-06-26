@@ -17,6 +17,7 @@ body {
 
   height: 100vh;
   width: 100vw;
+  overflow: hidden;
 }
 
 #mainWindow {
@@ -33,8 +34,11 @@ body {
   grid-column: 3;
 }
 
-#upgrades {
+#upgradesMenu {
   position: relative;
+  display: grid;
+  grid-template-columns: auto 64px;
+
   left: -320px;
   height: 100%;
   width: 384px;
@@ -46,18 +50,95 @@ body {
   backdrop-filter: blur(8px);
 }
 
-#upgrades.open {
+#upgradesMenu.open {
   left: 0;
 }
 
-#upgrades .header {
+#upgradesMenu > .content {
+  display: grid;
+  grid-template-rows: 39px calc(100vh - 48px);
+  gap: 9px;
+}
+
+#upgradesMenu > .content > .header {
   font-size: 32px;
   margin-top: 4px;
   font-weight: 700;
   text-transform: uppercase;
 }
 
-#upgrades #closeButton {
+#upgradeList {
+  height: 100%;
+  padding: 0;
+  overflow-y: auto;
+}
+
+#upgradeList::-webkit-scrollbar {
+  background-color: transparent;
+}
+
+#upgradeList::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+}
+
+#upgradeList .upgrade {
+  position: relative;
+  display: grid;
+  overflow: hidden;
+  grid-template-columns: 25% auto 25%;
+  grid-template-rows: 20px auto 20px;
+  background-color: rgba(0, 0, 0, 0.1);
+  margin: 8px auto;
+  border-radius: 4px;
+  width: 80%;
+  height: 64px;
+  transition: background-color 200ms ease-in-out;
+}
+
+#upgradeList .upgrade:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+#upgradeList .upgrade .img {
+  background-size: cover;
+  grid-row: 1 / 4;
+  grid-column: 1;
+}
+
+#upgradeList .upgrade .header {
+  grid-column: 2 / 3;
+  grid-row: 1;
+}
+
+#upgradeList .upgrade .desc {
+  font-size: 10px;
+  overflow: hidden;
+
+  grid-column: 2;
+  grid-row: 2;
+}
+
+#upgradeList .upgrade .price {
+  display: flex;
+  justify-content: center;
+  font-size: 11px;
+  grid-column: 2;
+  grid-row: 3;
+}
+
+#upgradeList .upgrade .count {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 56px;
+  line-height: 1.1;
+
+  grid-column: 3;
+  grid-row: 1 / 4;
+}
+
+#upgradesMenu #closeButton {
   position: absolute;
   display: flex;
   align-items: center;
@@ -66,14 +147,21 @@ body {
   top: 0;
   bottom: 0;
   width: 64px;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(5, 2, 2, 0.05);
 
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0);
+
+  transition: background-color 100ms ease-in-out, box-shadow 100ms ease-in-out;
 
   cursor: pointer;
 }
 
-#upgrades #closeButton > .bar {
+#upgradesMenu #closeButton:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.125);
+}
+
+#upgradesMenu #closeButton > .bar {
   position: absolute;
   
   width: 32px;
@@ -82,19 +170,19 @@ body {
   transition: transform 100ms ease-in-out;
 }
 
-#upgrades #closeButton > .bar:nth-child(1) {
+#upgradesMenu #closeButton > .bar:nth-child(1) {
   transform: translateY(10px) rotate(-45deg);
 }
 
-#upgrades #closeButton > .bar:nth-child(2) {
+#upgradesMenu #closeButton > .bar:nth-child(2) {
   transform: translateY(-10px) rotate(45deg);
 }
 
-#upgrades.open #closeButton > .bar:nth-child(1) {
+#upgradesMenu.open #closeButton > .bar:nth-child(1) {
   transform: translateY(10px) rotate(45deg);
 }
 
-#upgrades.open #closeButton > .bar:nth-child(2) {
+#upgradesMenu.open #closeButton > .bar:nth-child(2) {
   transform: translateY(-10px) rotate(-45deg);
 }
 

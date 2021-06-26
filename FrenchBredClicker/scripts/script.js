@@ -13,7 +13,7 @@ window.onload = function() {
 }
 
 setInterval(() => {
-  const bredWidth = Number(getComputedStyle(bred).width.split('px')[0]);
+  const bredWidth = +getComputedStyle(bred).width.split('px')[0];
   bred.style.height = `${bredWidth}px`;
 }, 1000 / 15);
 

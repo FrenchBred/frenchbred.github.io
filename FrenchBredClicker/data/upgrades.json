@@ -1,0 +1,18 @@
+[
+  {
+    "title": "More PPC",
+    "description": "Increases your points per click by one.",
+    "img": "images/bred.png",
+    "defaultprice": 50,
+    "command": "document.cookie = `pointsPerClick=${+getCookieValue('pointsPerClick') + 1}`;",
+    "level": 0
+  },
+  {
+    "title": "Lose Money",
+    "description": "This does exacly what you think it does",
+    "img": "images/bred2.png",
+    "command": "save.reset();",
+    "defaultprice": 100,
+    "level": 0
+  }
+]
