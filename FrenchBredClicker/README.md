@@ -8,7 +8,7 @@ Typical clicker game based on good old cookie clicker but about clicking baguett
 
 - [x] Clickable bred
 - [x] Save system
-- [x] Dark mode
+- [ ] Dark mode
 - [ ] Clicking 'machines'
 - [ ] AntiCheat (encrypting / encoding saves and prevent changing points from console)
 - [ ] Achievements
