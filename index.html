@@ -1,19 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FrenchBred HUB</title>
+    <title>FrenchBred</title>
     <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="FrenchBred - a small group of friends who make and play games.">
+    <meta name="author" content="spzla#0789">
   </head>
   <body>
-    <div id="content">
-      <div id="title">Games</div>
-      <div class="menu"><div class="name"><a href="FrenchBredClicker/">Clicker</a></div></div>
-      <div class="menu"><div class="name"><a href="#">Something</a></div></div>
-      <div class="menu"><div class="name"><a href="#">Else</a></div></div>
-      <div class="menu"><div class="name"><a href="#">idk yet</a></div></div>
+    <div class="menu">
+      <div class="burger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+
+      <div class="list">
+        <a class="item" target="_blank" href="FrenchBredClicker">FrenchBred Clicker</a>
+        <div class="item" onClick="window.open(this.getAttribute('href'), '', 'width=800, height=600');" href="https://discord.gg/dhmvyeJbfp">Discord</div>
+        <a class="item" target="_blank" href="https://steamcommunity.com/groups/FrenchBred/">Steam Group</a>
+        <a class="item" target="_blank" href="https://www.roblox.com/groups/11372648/FrenchBred/">Roblox Group</a>
+      </div>
     </div>
+    <div class="content">
+      <div class="title big"><img src="src/img/frenchbred256.png" alt="bred" class="logo">FrenchBred</div>
+      <br>
+      <div class="title small">Who are we?</div>
+      <div class="desc">We are a small group of friends who make and play games.</div>
+      <br>
+      <div class="title small">Why?</div>
+      <div class="desc">Yes.</div>
+    </div>
+    <div class="footer">FrenchBred &copy; 2021</div>
+    <script src="burger.js"></script>
   </body>
 </html>

@@ -1,61 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 * { 
-  margin: 0; 
-  font-family: arial; 
+  max-height: 100vh;
   box-sizing: border-box; 
+  font-family: 'Arial', sans-serif;
 }
 
-body { 
+body {
+  background-color: #222;
+  color: #fff;
+  margin: 0;
+}
+
+div.menu {
+  background-color: #111;
+  /* box-shadow: 0 0 0 0 #111; */
+
+  display: inline-block;
+
+  position: relative;
+  top: 0;
+  left: -256px;
+
+  width: 256px;
+  height: 100vh;
+  transition: box-shadow 500ms ease-in-out,
+              left 500ms ease-in-out;
+
+  z-index: 10;
+}
+
+div.menu.open {
+  /* box-shadow: 0 0 4px 8px #111; */
+
+  left: 0;
+}
+
+/* BURGER */
+
+div.menu .burger {
+  position: absolute;
+  right: -64px;
+  top: 0;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  transition: right 500ms ease-in-out; 
+
+  padding: 12px 8px;
+  cursor: pointer;
+}
+
+div.menu .burger.collapsed {
+  right: 0;
+}
+
+div.menu .burger .bar {
+  background-color: currentColor;
+
+  border-radius: 2px;
+  margin-top: 8px;
+
+  color: #ccc;
+
+  width: 48px;
+  height: 8px;
+  transition: width 500ms ease-in-out,
+              transform 500ms ease-in-out,
+              color 100ms ease-in-out;
+}
+
+div.menu .burger.collapsed .bar {
+  color: #ccc;
+
+  width: 48px;
+  height: 8px;
+}
+
+div.menu .burger:hover .bar {
+  color: #fff;
+}
+
+div.menu .burger.collapsed .bar:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+div.menu .burger.collapsed .bar:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+div.menu .burger.collapsed .bar:nth-child(1), 
+div.menu .burger.collapsed .bar:nth-child(4) {
+  width: 0;
+}
+
+div.menu .burger .bar:first-child {
+  margin-top: 0;
+}
+
+div.menu .burger .bar:nth-child(3) {
+  margin-top: -8px;
+}
+
+/* MENU */
+
+div.menu .header {
+  width: 100%;
+  text-align: center;
+}
+
+div.menu .list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 8px;
+
+  position: absolute;
+  top: 64px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+div.menu .list .item {
+  background-color: #1a1a1a;
+  box-shadow: 0 0 0 0 #1a1a1a;
+
+  font-size: 1.33em;
+  text-decoration: none;
+  color: #ccc;
+  text-align: center;
+  line-height: 48px;
+
+  width: 80%;
+  height: 48px;
+
+  border-radius: 4px;
+
+  cursor: pointer;
+  transition: background-color 200ms ease-in-out,
+              box-shadow 200ms ease-in-out;
+}
+
+div.menu .list .item:hover {
+  background-color: #222;
+  box-shadow: 0 0 0 1px #222;
+}
+
+
+div.content {
+  position: absolute;
+  top: 0; bottom: 0;
+  left: 0; right: 0;
+}
+
+div.content .title.big {
+  background-color: #1a1a1a;
+  position: relative;
+  left: 0; right: 0;
+  
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #212121; 
-  height: 100vh; 
-}
-
-#content {
-  position: relative;
-}
-
-#content > #title {
-  color: #e0e0e0;
-  font-size: 64px;
+  
   text-align: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  font-size: 48px;
+  line-height: 1em;
+  font-weight: 700;
+
+  padding: 8px;
 }
 
-.menu {
-  position: relative;
-  text-align: center;
-  width: 750px;
-  height: 100px;
-  margin: 2px 0;
-  left: 50%;
-  transform: translateX(-50%);
-  border-radius: 16px 0;
-  background-color: #383838;
-  transition: background-color 300ms ease-in-out,
-              border-radius 300ms ease-in-out;
+div.content .title img.logo {
+  height: 48px;
+  padding: 0 8px 0 0;
+  -webkit-user-drag: none;
 }
 
-.menu:hover {
-  background-color: #474747;
-  border-radius: 0 16px;
-}
+div.content .title.small {
+  display: block;
 
-.name {
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   font-size: 32px;
-  text-shadow: 0 0 0 #000;
-  transition: font-size 200ms ease-in-out, 
-              text-shadow 200ms ease-in-out;
+  line-height: 1em;
+  font-style: italic;
+
+  padding: 8px;
 }
 
-a {
+div.content .desc {
+  text-align: center;
+
+  padding: 0 8px;
+}
+
+div.footer {
+  background: #1a1a1a;
+
+  height: 32px;
+
   position: absolute;
-  text-decoration: none;
-  color: #e0e0e0;
-  line-height: 100px;
-  left: 0;
+  bottom: 0;
   right: 0;
+  left: 0;
+
+  text-align: center;
+  font-size: 16px;
+  line-height: 32px;
+  font-style: italic;
+
+  z-index: 5;
+}
+
+@media only screen and (orientation: portrait) {
+  div.content .title.big {
+    font-size: 40px;
+    
+    padding: 12px
+  }
+
+  div.content .title img.logo {
+    display: none;
+  }
 }
