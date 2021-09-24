@@ -1,0 +1,46 @@
+[
+  {
+    "text": "Team",
+    "href": "/team",
+    "target": "_self",
+    "args": "",
+    "path": {
+      "name": "/team/",
+      "mode": "blacklist"
+    }
+  },
+  {
+    "text": "Main Page",
+    "href": "/",
+    "target": "_self",
+    "args": "",
+    "path": {
+      "name": "/",
+      "mode": "blacklist"
+    }
+  },
+  {
+    "text": "FrenchBred Clicker",
+    "href": "/FrenchBredClicker",
+    "target": "_blank",
+    "args": ""
+  },
+  {
+    "text": "Discord",
+    "href": "https://discord.gg/dhmvyeJbfp",
+    "target": "_blank",
+    "args": ""
+  },
+  {
+    "text": "Steam Group",
+    "href": "https://steamcommunity.com/groups/FrenchBred/",
+    "target": "_blank",
+    "args": ""
+  },
+  {
+    "text": "Roblox Group",
+    "href": "https://www.roblox.com/groups/11372648/FrenchBred/",
+    "target": "_blank",
+    "args": ""
+  }
+]
