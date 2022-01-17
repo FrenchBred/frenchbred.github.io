@@ -1,42 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FrenchBred</title>
+    <title>FrenchBred's website</title>
+    <meta name="description" content="Little programming friends team making games about France and bread.">
+    <meta name="author" content="FrenchBred">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="burger.css">
-    <meta name="description" content="FrenchBred - a small group of friends who make and play games.">
-    <meta name="author" content="spzla">
-  </head>
-  <body>
-    <div class="menu">
-      <div class="burger">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-      </div>
+</head>
+<body>
+    <header>
+        <div id="banner" class="nav-item">
+            <a onclick="moveNavbar()" tabindex="0">🥖 FrenchBred</a>
+        </div>
+        <hgroup>
+            <a class="responsive-nav" href="https://www.roblox.com/groups/11372648/FrenchBred" target="_blank">Roblox Group</a>
+            <a class="responsive-nav" href="https://discord.com/invite/dhmvyeJbfp" target="_blank">Discord</a>
+            <a class="responsive-nav" href="https://github.com/FrenchBred?type=source" target="_blank">Github</a>
+        </hgroup>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#team">The Team</a>
+        <a href="#projects">Projects</a>
+        <a class="responsive-nav" href="https://www.roblox.com/groups/11372648/FrenchBred" target="_blank">Roblox Group</a>
+        <a class="responsive-nav" href="https://discord.com/invite/dhmvyeJbfp" target="_blank">Discord</a>
+        <a class="responsive-nav" href="https://github.com/FrenchBred?type=source" target="_blank">Github</a>
+    </nav>
+    <main>
+        <article id="home">
 
-      <div class="list"></div>
-    </div>
-     
-    <div class="content">
-      <div class="title big"><img src="img/frenchbred.png" alt="bred" class="logo">FrenchBred</div>
-      <div style="height: 64px;"></div>
-      <div class="title small">Who are we?</div>
-      <div class="desc">
-        Little programming friends team making games about France and bread.  
-        <br>
-        We are not planning to do big projects.  
-        Don't expect good games as we make them for fun and learning.</div>
-      <br>
-      <div class="title small">FrenchBred or French Bred?</div>
-      <div class="desc">French Bred is original name, but spzla prefers without space.</div>
-    </div>
-    <div class="footer">FrenchBred &copy; 2021</div>
-    <script src="burger.js"></script>
-    <script src="menu.js"></script>
-  </body>
+        </article>
+    </main>
+</body>
+<script>
+    //Scroll navbar highlight
+    window.scroll(() => {
+        
+    })
+
+    //Left navbar script
+    let open = false;
+    function moveNavbar() {
+        if(open) {
+            document.querySelector('nav').style.left = "-200px";
+            open = false;
+        }else {
+            document.querySelector('nav').style.left = "0px";
+            open = true;
+        }
+    }
+</script>
 </html>
