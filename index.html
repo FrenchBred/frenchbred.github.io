@@ -7,7 +7,7 @@
     <title>FrenchBred's website</title>
     <meta name="description" content="Little programming friends team making games about France and bread.">
     <meta name="author" content="FrenchBred">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
     <header>
@@ -34,22 +34,5 @@
         </article>
     </main>
 </body>
-<script>
-    //Scroll navbar highlight
-    window.scroll(() => {
-        
-    })
-
-    //Left navbar script
-    let open = false;
-    function moveNavbar() {
-        if(open) {
-            document.querySelector('nav').style.left = "-200px";
-            open = false;
-        }else {
-            document.querySelector('nav').style.left = "0px";
-            open = true;
-        }
-    }
-</script>
+<script src="./script.js"></script>
 </html>
