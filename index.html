@@ -1,42 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FrenchBred</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="burger.css">
-    <meta name="description" content="FrenchBred - a small group of friends who make and play games.">
-    <meta name="author" content="spzla">
-  </head>
-  <body>
-    <div class="menu">
-      <div class="burger">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-      </div>
+    <title>FrenchBred's website</title>
+    <meta name="description" content="Little programming friends team making games about France and bread.">
+    <meta name="author" content="FrenchBred">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>
+        <a id="banner" onclick="moveNavbar()">
+            <div>
+                <img src="https://avatars.githubusercontent.com/u/86165749" alt="FrenchBred logo">
+                <p>FrenchBred</p>
+            </div>
+        </a>
+        <div id="social">
+            <a class="responsive" href="https://github.com/FrenchBred?type=source" target="_blank">Github</a>
+            <a class="responsive" href="https://discord.com/invite/dhmvyeJbfp" target="_blank">Discord</a>
+            <a class="responsive" href="https://www.roblox.com/groups/11372648/FrenchBred" target="_blank">Roblox Group</a>
+        </div>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a class="responsive" href="https://github.com/FrenchBred?type=source" target="_blank">Github</a>
+        <a href="#team">The Team</a>
+        <a class="responsive" href="https://discord.com/invite/dhmvyeJbfp" target="_blank">Discord</a>
+        <a href="#projects">Projects</a>
+        <a class="responsive" href="https://www.roblox.com/groups/11372648/FrenchBred" target="_blank">Roblox Group</a>
+    </nav>
+    <main>
+        <article id="home">
+            <h2>So who are we?</h2>
+            <p>Little programming friends team making games about France and bread.</p>
 
-      <div class="list"></div>
-    </div>
-     
-    <div class="content">
-      <div class="title big"><img src="img/frenchbred.png" alt="bred" class="logo">FrenchBred</div>
-      <div style="height: 64px;"></div>
-      <div class="title small">Who are we?</div>
-      <div class="desc">
-        Little programming friends team making games about France and bread.  
-        <br>
-        We are not planning to do big projects.  
-        Don't expect good games as we make them for fun and learning.</div>
-      <br>
-      <div class="title small">FrenchBred or French Bred?</div>
-      <div class="desc">French Bred is original name, but spzla prefers without space.</div>
-    </div>
-    <div class="footer">FrenchBred &copy; 2021</div>
-    <script src="burger.js"></script>
-    <script src="menu.js"></script>
-  </body>
+            <h2>What's our point?</h2>
+            <p>We are doing stuff just for learning and self-entertainment.</p>
+
+            <h2>We are not from France.</h2>
+            <p>We are not from France.</p>
+
+            <img src="https://avatars.githubusercontent.com/u/86165749" alt="FrenchBred logo">
+        </article>
+        <article id="team">
+            <h1>That Famous Team</h1>
+            <p>Plates to be done</p>
+        </article>
+        <article id="projects">
+            <h1>Our Projects</h1>
+            <p>If we had any...</p>
+        </article>
+        <footer>Copyright © FrenchBred</footer>
+    </main>
+</body>
 </html>
+<script src="./script.js"></script>
