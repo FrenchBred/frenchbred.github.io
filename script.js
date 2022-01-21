@@ -1,16 +1,11 @@
-//Scroll navbar highlight
-window.scroll(() => {
-        
-})
-
 //Left navbar script
-let open = false;
+let debounce = false;
 function moveNavbar() {
-    if(open) {
+    if(debounce) {
         document.querySelector('nav').style.left = "-200px";
-        open = false;
+        debounce = false;
     }else {
         document.querySelector('nav').style.left = "0px";
-        open = true;
+        debounce = true;
     }
 }
