@@ -56,3 +56,10 @@ article p {
 .note {
     font-size: 14px;
 }
+
+/* Responsive styles */
+@media screen and (max-width: 1000px) {
+    article {
+        width: 90%;
+    }
+}
