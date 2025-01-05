@@ -67,4 +67,7 @@ article p {
     article {
         width: calc(100% - 32px);
     }
+    #banner {
+        font-size: 24px;
+    }
 }
