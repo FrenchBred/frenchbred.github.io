@@ -65,6 +65,6 @@ article p {
 /* Responsive styles */
 @media screen and (max-width: 1000px) {
     article {
-        width: calc(100% - 64px);
+        width: calc(100% - 32px);
     }
 }
